@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(191, 155, 198);
+            border :5px solid rgb(38, 19, 19);
+        }
+        .box1{
+            width: 850px;
+            height: 600px;
+            background-color:rgb(122, 74, 150);
+            border-radius:10px;
+            margin: 10px;
+            position:relative;
+           animation-name:boxx1;
+            animation-duration: 5s;
+            animation-iteration-count:3;
+            animation-delay:1s;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+        }
+        #text1:hover{
+            color: rgb(136, 0, 255);
+            text-shadow:2px 2px 5px rgb(5, 6, 5) ;
+        }
+        .box2{
+            width: 830px;
+            height: 560px;
+            background-color:rgb(151, 105, 178);
+            border-radius:10px;
+            margin: 10px;
+            position:relative;
+            animation-name:boxx2;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+            animation-delay:5s;
+            animation-timing-function: linear;
+        }
+        #text2:hover{
+            color: rgba(140, 84, 157, 0.984);
+            text-shadow: 2px 2px 5px rgb(189, 230, 26);
+        }
+        .box3{
+            height: 50px;width: 600px;
+            animation: name1 5s linear 5s 3s alternate-reverse;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition-duration: 1000s;
+            transition-delay: 2s;
+        }
+        @keyframes boxx1 {
+            from{
+                top:0;
+                left: 0;
+            }
+            to{
+                top:0;
+                left:900px;
+            }
+        }
+        @keyframes boxx2 {
+            from{
+                top:0;
+                left: 0;
+            }
+            to{
+                top:0;
+                left:120;
+            }
+        }
+        #name{
+            width: 0px;
+            height: 0px;
+        }
+        #name:hover{
+            width: 120px;
+            height: 20px;
+            background-color: rgb(149, 94, 26);
+        }
+        #para1{
+            background-color: rgb(198, 114, 221);
+            text-shadow: 2px 2px 5px rgb(46, 135, 98);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1 id="text1" style="color: rgb(122, 74, 150);">Code With Shijin</h1>
+            <div class="box2"><h1 id="text2" style="color: rgb(151, 105, 178)">LAUNCH IT RIGHT NOW</h1>
+                <p id="para1" style="color:rgb(33, 40, 169);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium cupiditate officia sapiente nihil blanditiis tenetur perspiciatis quibusdam quos sit eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus at, atque sint nostrum eius quibusdam odio? Dolorum suscipit doloremque porro aliquam repudiandae! Ipsa ipsam minima perspiciatis accusamus dignissimos harum tenetur nihil placeat voluptatum totam tempore quidem ex mollitia inventore saepe, odio aspernatur nisi officiis quisquam necessitatibus modi dolores! Vel expedita corporis minima odit aspernatur rem eos reprehenderit repudiandae deleniti laborum necessitatibus, animi quis repellat obcaecati quas inventore, laudantium eius. Ex quos provident cum dolor error, quasi saepe qui laudantium iure esse ratione quaerat, eveniet ullam enim velit quibusdam dolorem magnam eum ut totam aut sint maxime ipsum. Omnis eligendi nihil, doloremque harum, nam eveniet magni quo, repellat ea sit dolorem! Aspernatur repellendus est aut voluptatum quaerat numquam accusantium consectetur sint officiis doloribus quo, reprehenderit necessitatibus excepturi itaque aperiam iste quae ratione architecto. Mollitia numquam, ipsum est sint ut dolor perspiciatis consequatur nostrum rem unde eum dicta distinctio perferendis totam harum voluptas pariatur neque omnis eaque porro in explicabo nam necessitatibus aspernatur. Itaque, laboriosam? Minima recusandae nostrum cumque tempore voluptate esse optio nesciunt libero beatae aperiam vero omnis, nihil illo iste ducimus cupiditate numquam perferendis molestias quae facilis distinctio ullam modi aliquam? Cupiditate inventore obcaecati autem nostrum deleniti a harum temporibus?</p>
+            </div>
+            
+        </div>
+        <div class="box3"><h2 style="color: brown;">Can you find the word "Code With Shijin" ?</h2>
+            <label for="name" style="color: rgba(0, 102, 255, 0.844);">Name</label>
+            <input type="text" id="name" style="color: antiquewhite;">
+        </div>
+    </div>
+</body>
+</html>
